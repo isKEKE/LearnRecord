@@ -1,0 +1,11 @@
+systemctl stop 服务器名称
+systemctl disable 服务器名称
+
+// 查看服务器自启动服务
+systemctl list-unit-files | grep enabled
+
+// 查看谁占用此端口
+lsof -i:端口
+
+// 查看已占用端口
+ss -tunl
